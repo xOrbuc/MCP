@@ -1,0 +1,114 @@
+{
+  "name": "orbuc",
+  "display_name": "Orbuc",
+  "description": "Independent on-chain stablecoin market cap and Bitcoin institutional holdings data. 12 tools covering 13 stablecoins across 19 chains, and BTC holdings across 6 institutional segments. Sourced directly from smart contract RPC calls and SEC EDGAR filings \u2014 no third-party aggregators.",
+  "provider": {
+    "name": "Orbuc Research Ltd",
+    "url": "https://orbuc.io"
+  },
+  "repository": {
+    "url": "https://github.com/xOrbuc/orbuc-mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "release_date": "2026-03-24",
+  "is_official": true,
+  "categories": [
+    "Finance",
+    "Cryptocurrency",
+    "Data & Analytics"
+  ],
+  "tags": [
+    "stablecoin",
+    "bitcoin",
+    "crypto",
+    "market-cap",
+    "on-chain",
+    "defi",
+    "institutional",
+    "etf",
+    "usdt",
+    "usdc",
+    "holdings",
+    "x402"
+  ],
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://mcp.orbuc.io/mcp/orbuc",
+    "stateless": true,
+    "json_response": true
+  },
+  "auth": {
+    "type": "none"
+  },
+  "pricing": {
+    "type": "free",
+    "note": "Currently free and open access. x402 micropayment pricing may be introduced in future."
+  },
+  "tools": [
+    {
+      "name": "orbuc_stablecoin_mcap",
+      "description": "Get historical daily total stablecoin market cap across all tracked issuers",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_stablecoin_latest",
+      "description": "Get the latest full snapshot of all tracked stablecoins with per-issuer and per-chain breakdown",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_stablecoin_coin",
+      "description": "Get historical supply data for a specific stablecoin",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_stablecoin_coin_latest",
+      "description": "Get the latest supply data for a specific stablecoin with chain breakdown",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_stablecoin_aggregate",
+      "description": "Get daily aggregate stablecoin data by total, symbol, or chain level",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_stablecoin_chains",
+      "description": "Get stablecoin supply distribution across chains",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_btc_holdings_current",
+      "description": "Get the latest total BTC held by institutions broken down by segment",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_btc_holdings_segments",
+      "description": "Get current BTC holdings per segment with confidence levels and data sources",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_btc_holdings_daily",
+      "description": "Get daily BTC holdings time series optionally filtered by segment",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_btc_holdings_weekly",
+      "description": "Get weekly aggregated BTC holdings optionally filtered by segment",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_btc_health",
+      "description": "Check health of the BTC holdings tracker",
+      "read_only": true
+    },
+    {
+      "name": "orbuc_stablecoin_health",
+      "description": "Check health of the stablecoin market cap tracker",
+      "read_only": true
+    }
+  ],
+  "health_check": "https://mcp.orbuc.io/mcp/health",
+  "contacts": {
+    "email": "info@orbuc.io"
+  }
+}
