@@ -12,7 +12,7 @@ Remote MCP server providing AI agents with direct access to independent on-chain
 
 ## What is Orbuc?
 
-Orbuc Research tracks two core datasets independently — no third-party aggregators:
+Orbuc is a digital asset research and investment firm. Orbuc produces its own data, tracking two core datasets independently — no third-party aggregators:
 
 - **Stablecoin Market Cap** — direct on-chain `totalSupply()` RPC calls across 19 blockchain networks covering 13 stablecoins (USDT, USDC, USDS, DAI, USDe, FDUSD, PYUSD, USD1, BUIDL, BUIDL-I, crvUSD, GHO, FRAX). Updated daily at 03:00 UTC.
 
