@@ -147,7 +147,7 @@ Once connected, ask your AI agent:
 ### Bitcoin Holdings
 - **Segments:** public_companies, etf_funds, governments, private_companies, defi_other, exchanges_custodians
 - **History from:** August 2025
-- **Sources:** SEC EDGAR, Etherscan, bitbo.io, GNews event detection
+- **Sources:** SEC EDGAR, Etherscan, event detection
 
 ---
 
